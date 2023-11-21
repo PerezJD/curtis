@@ -1,0 +1,47 @@
+{
+  "palette": {
+    "mode": "dark",
+    "text": {
+      "primary": "#FAF0E6",
+      "secondary": "#f5f5dc",
+      "disabled": "rgba(255, 255, 255, 0.5)"
+    }
+  },
+  "typography": {
+    "h1": {
+      "fontFamily": "Josefin Sans, Helvetica, Arial, sans-serif"
+    },
+    "h2": {
+      "fontFamily": "Josefin Sans, Helvetica, Arial, sans-serif"
+    },
+    "h3": {
+      "fontFamily": "Josefin Sans, Helvetica, Arial, sans-serif"
+    },
+    "h4": {
+      "fontFamily": "Josefin Sans, Helvetica, Arial, sans-serif"
+    },
+    "body1": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    },
+    "body2": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    },
+    "button": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "fontWeight": 500
+    },
+    "caption": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    },
+    "overline": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    },
+    "subtitle1": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    },
+    "subtitle2": {
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif"
+    }
+  }
+}
