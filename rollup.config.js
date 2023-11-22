@@ -1,5 +1,6 @@
 import nodeResolve from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
+import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
@@ -36,7 +37,7 @@ export default [
       {
         dir: "lib",
         exports: "auto",
-        format: "esm"
+        format: "commonjs"
       }
     ],
     external: ["solid-js", "solid-js/web"],
@@ -46,6 +47,7 @@ export default [
         exportConditions: ["solid"],
         preferBuiltins: true
       }),
+      commonjs(),
       babel({
         extensions,
         babelHelpers: "bundled",
@@ -56,5 +58,4 @@ export default [
       })
     ]
   }
-  
 ];

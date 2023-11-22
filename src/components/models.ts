@@ -10,6 +10,7 @@ export interface PageData {
 
 export interface PageProps {
   pageData: PageData;
+  theme: Theme;
 }
 
 export type HeroComponentProps = ImageComponentProps | VideoComponentProps;
