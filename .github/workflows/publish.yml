@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - main
+      - initial
 
 jobs:
   build_bundle:
