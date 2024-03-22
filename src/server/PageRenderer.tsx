@@ -13,7 +13,7 @@ import App from "../client/components/App";
 
 export default class PageRenderer {
 
-  static async render(pageData: PageProps) {
+  static async render(pageProps: PageProps) {
     const cache = createCache({ key: 'css' });
     const { extractCriticalToChunks, constructStyleTagsFromChunks } = createEmotionServer(cache);
 
@@ -24,7 +24,7 @@ export default class PageRenderer {
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline
             to build upon. */}
           <CssBaseline />
-          <App pageData={pageData}/>
+          <App {...pageProps}/>
         </ThemeProvider>
       </CacheProvider>
     );
@@ -33,17 +33,17 @@ export default class PageRenderer {
     const emotionChunks = extractCriticalToChunks(html);
     const emotionCss = constructStyleTagsFromChunks(emotionChunks);
 
-    return PageRenderer.#renderHtmlTemplate(html, emotionCss, pageData);
+    return PageRenderer.#renderHtmlTemplate(html, emotionCss, pageProps);
   }
 
-  static #renderHtmlTemplate(html: string, css: string, pageData: PageProps): string {
+  static #renderHtmlTemplate(html: string, css: string, pageProps: PageProps): string {
     return `
       <!DOCTYPE html>
       <html lang="en">
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
-          <title>${pageData.title}</title>
+          <title>${pageProps.title}</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
