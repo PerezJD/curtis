@@ -1,0 +1,81 @@
+{
+  "path": "/",
+  "title": "Curtis Rochelle - Level Design",
+  "hero": {
+    "component": "video",
+    "src": "https://www.youtube.com/watch?v=9LtjWxmC6KY",
+    "title": "Roll for Sandwich"
+  },
+  "components": [
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "projectCard",
+      "width": "half",
+      "image": {
+        "src": "/images/witch/battlements05.jpg",
+        "caption": "An awesome picture of something",
+        "credit": "Curtis Rochelle"
+      },
+      "projectName": "Witch",
+      "link": "/witch.html"
+    },
+    {
+      "component": "projectCard",
+      "width": "half",
+      "image": {
+        "src": "/images/kx/Watchtower2.jpg",
+        "caption": "An awesome picture of something",
+        "credit": "Curtis Rochelle"
+      },
+      "projectName": "Kingsman",
+      "link": "/kingsman.html"
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "video",
+      "src": "https://www.youtube.com/watch?v=wqU2xj7hPwM",
+      "title": "Roll for Sandwich"
+    },
+    {
+      "component": "gallery",
+      "slides": [
+        {
+          "image": "/path/to/image.png",
+          "caption": "An awesome picture of something",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "image": "/path/to/imag2e.png",
+          "caption": "Another awesome picture of something",
+          "credit": "Curtis Rochelle"
+        }
+      ]
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    },
+    {
+      "component": "markdown",
+      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+    }
+  ]
+}
