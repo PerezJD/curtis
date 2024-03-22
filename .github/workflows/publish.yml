@@ -62,7 +62,7 @@ jobs:
         run: tar -czvf ${{ runner.temp }}/curtis-rochelle-build-artifacts.tar.gz ${{ runner.temp }}/public
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           name: curtis-rochelle-portfolio
           path: ${{ runner.temp }}/curtis-rochelle-build-artifacts.tar.gz
@@ -72,3 +72,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: curtis-rochelle-portfolio
