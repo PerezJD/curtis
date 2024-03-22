@@ -35,11 +35,12 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: curtis-rochelle-build-artifacts
-          path: public/
+          name: curtis-rochelle-portfolio
+          path: ${{ runner.temp }}/public
+          retention-days: 5
 
   publish:
     runs-on: ubuntu-latest
@@ -52,19 +53,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download build
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.pre_release_name }}
-          path: ${{ runner.temp }}/public
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: curtis-rochelle-portfolio
-          path: ${{ runner.temp }}/public
-          retention-days: 5
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
