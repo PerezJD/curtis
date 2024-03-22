@@ -6,16 +6,17 @@ import {
   TextComponentProps,
   PageComponentProps,
   ProjectCardComponentProps,
-  VideoComponentProps, MultilineMarkdownComponentProps
+  VideoComponentProps,
+  MultilineMarkdownComponentProps
 } from "../../../models";
 import TextComponent from "../markdown/TextComponent";
+import MultilineMarkdownComponent from "../markdown/MultilineMarkdownComponent";
 import ImageComponent from "../image/ImageComponent";
 import VideoComponent from "../video/VideoComponent";
 import ProjectCardComponent from "../card/ProjectCardComponent";
 import GalleryComponent from "../gallery/GalleryComponent";
 
 import Grid from "@mui/material/Grid";
-import MultilineMarkdownComponent from "../markdown/MultilineMarkdownComponent";
 
 const PageComponent: FunctionComponent<PageComponentProps> = ({ component, width, sx, ...props }) => {
 
