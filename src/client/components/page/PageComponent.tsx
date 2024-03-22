@@ -6,9 +6,11 @@ import {
   TextComponentProps,
   PageComponentProps,
   ProjectCardComponentProps,
-  VideoComponentProps
+  VideoComponentProps,
+  MultilineMarkdownComponentProps
 } from "../../../models";
 import TextComponent from "../markdown/TextComponent";
+import MultilineMarkdownComponent from "../markdown/MultilineMarkdownComponent";
 import ImageComponent from "../image/ImageComponent";
 import VideoComponent from "../video/VideoComponent";
 import ProjectCardComponent from "../card/ProjectCardComponent";
@@ -38,6 +40,7 @@ const PageComponent: FunctionComponent<PageComponentProps> = ({ component, width
     <>
       <Grid item xs={columns.xs} sm={columns.sm} md={columns.md} sx={{...sx}}>
         {component === 'markdown' && <TextComponent {...props as TextComponentProps} />}
+        {component === 'multiline-markdown' && <MultilineMarkdownComponent {...props as MultilineMarkdownComponentProps} />}
         {component === 'image' && <ImageComponent {...props as ImageComponentProps} />}
         {component === 'video' && <VideoComponent {...props as VideoComponentProps} />}
         {component === 'projectCard' && <ProjectCardComponent {...props as ProjectCardComponentProps} />}
