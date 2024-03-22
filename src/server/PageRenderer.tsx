@@ -7,15 +7,20 @@ import createCache from "@emotion/cache";
 import { CacheProvider } from '@emotion/react';
 import createEmotionServer from "@emotion/server/create-instance";
 
-import theme from '../theme';
 import {PageProps} from "../models";
 import App from "../client/components/App";
+import {createTheme} from "@mui/material/styles";
+import {ThemeOptions} from "@mui/material/styles/createTheme";
+import readJsonFile from "./readJsonFile";
 
 export default class PageRenderer {
 
   static async render(pageProps: PageProps) {
     const cache = createCache({ key: 'css' });
     const { extractCriticalToChunks, constructStyleTagsFromChunks } = createEmotionServer(cache);
+
+    const themeOptions = readJsonFile<ThemeOptions>(`${__dirname}/../../data/theme.json`);
+    const theme = createTheme(themeOptions);
 
     // Render the components to a string.
     const html = await renderToString(

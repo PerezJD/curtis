@@ -19,7 +19,6 @@ app.get("/:pageName", async (request: Request, response: Response): Promise<void
 
   const pageData = readJsonFile<PageProps>(`${__dirname}/../../data/pages/${pageName}.json`);
   const renderedPage = await PageRenderer.render(pageData);
-  console.log(renderedPage);
   response.send(renderedPage);
 });
 

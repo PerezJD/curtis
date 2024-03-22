@@ -11,7 +11,7 @@
     "start": "webpack serve --config=webpack.config.local.js",
     "build": "webpack",
     "compile": "tsc",
-    "serve": "node ./dist/server/index.js",
+    "serve": "node ./dist/src/server/index.js",
     "generate": "./generate.sh",
     "clean": "rm -rf build/ && rm -rf dist/ rm -rf public/js && rm -f public/*.html"
   },
