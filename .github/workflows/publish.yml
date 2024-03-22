@@ -27,8 +27,11 @@ jobs:
         id: compile_server
         run: npm run compile
 
-      - name: Build pages
-        run: npm run serve & npm run generate
+      - name: Run server
+        run: npm run serve
+
+      - name: Generate
+        run: npm run generate
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
