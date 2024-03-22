@@ -19,6 +19,7 @@ const Navbar: FunctionComponent = () => {
     <>
       { /* @ts-ignore */ }
       <AppBar ref={appBarRef}
+        position="relative"
         sx={{
           background: '#121212',
           border: '1px solid rgba(255, 255, 255, 0.12)',
@@ -30,8 +31,8 @@ const Navbar: FunctionComponent = () => {
         <Toolbar variant="dense">
           <Container maxWidth="xs">
             <Grid container spacing={2}>
-              {navigation.links.map(({url, text}) => (
-                <Grid item>
+              {navigation.links.map(({url, text}, index) => (
+                <Grid item key={`nav-link-${index}`}>
                   <Button href={url}>{text}</Button>
                 </Grid>
               ))}

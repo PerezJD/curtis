@@ -11,8 +11,8 @@ const App = ({ hero, components }: PageProps) => {
   return (
     <>
         <Header/>
+        {hero && <HeroComponent {...hero} />}
         <PageContainer>
-          {hero && <HeroComponent {...hero} />}
           {components && components.map((componentProps, index) => <PageComponent key={`${componentProps.component}-component-${index}`} {...componentProps} />)}
         </PageContainer>
         <Footer/>

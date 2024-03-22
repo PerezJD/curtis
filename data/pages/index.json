@@ -1,6 +1,10 @@
 {
   "path": "/",
   "title": "Curtis Rochelle - Level Design",
+  "hero": {
+    "component": "image",
+    "src": "images/3dpixelscene/Dragonhead2D_Final.jpg"
+  },
   "components": [
     {
       "component": "markdown",
