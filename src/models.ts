@@ -22,6 +22,11 @@ export interface TextComponentProps extends PageComponentProps {
   content: string;
 }
 
+export interface MultilineMarkdownComponentProps extends PageComponentProps {
+  component: "multiline-markdown";
+  lines: string[];
+}
+
 export interface ProjectCardComponentProps extends PageComponentProps {
   component: "projectCard";
   image: ImageComponentProps;

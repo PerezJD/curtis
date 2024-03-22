@@ -3,12 +3,14 @@
   "title": "Curtis Rochelle - Level Design - Witch",
   "components": [
     {
-      "component": "markdown",
-      "content": "**Role:** Level Designer\n\n**Engine:** Unreal 4\n\n**Studio:** Heartstrings Studios\n\n**Release Status:** Cancelled"
-    },
-    {
-      "component": "markdown",
-      "content": "[Steam Page](https://store.steampowered.com/app/1092870/Witch/)"
+      "component": "multiline-markdown",
+      "lines": [
+        "**Role:** Level Designer",
+        "**Engine:** Unreal 4",
+        "**Studio:** Heartstrings Studios",
+        "**Release Status:** Cancelled",
+        "[Steam Page](https://store.steampowered.com/app/1092870/Witch/)"
+      ]
     },
     {
       "component": "markdown",
