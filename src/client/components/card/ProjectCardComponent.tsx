@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from "react";;
+import React, {FunctionComponent} from "react";
 
 import {ProjectCardComponentProps} from "../../../models";
 import Box from "@mui/material/Box";

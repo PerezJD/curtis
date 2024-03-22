@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
 import getJson from "./server/readJsonFile";
 import {ThemeOptions} from "@mui/material/styles/createTheme";
 

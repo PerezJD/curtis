@@ -16,14 +16,6 @@ const Navbar: FunctionComponent = () => {
   const [appBarInitialY, setAppBarInitialY] = useState(0);
   const [appBarPositionStyle, setApBarPositionStyle] = useState<'relative'|'fixed'>('relative');
 
-  const handleScroll = () => {
-    if (window.scrollY >= appBarInitialY) {
-      setApBarPositionStyle('fixed');
-    } else {
-      setApBarPositionStyle('relative');
-    }
-  };
-
   useEffect(() => {
     if (appBarRef.current === null) return;
 

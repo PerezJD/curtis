@@ -39,7 +39,7 @@ export default class PageRenderer {
   static #renderHtmlTemplate(html: string, css: string, pageData: PageData): string {
     return `
       <!DOCTYPE html>
-      <html>
+      <html lang="en">
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />

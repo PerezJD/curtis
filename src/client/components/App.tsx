@@ -7,8 +7,6 @@ import PageComponent from "./page/PageComponent";
 import Footer from "./footer/Footer";
 import {PageProps} from "../../models";
 
-const cache = createCache({ key: 'css' });
-
 // Don't pass the theme, use the same theme JSON fil
 const App = ({ pageData }: PageProps) => {
   return (
