@@ -44,7 +44,10 @@ export interface VideoComponentProps extends PageComponentProps {
 
 export interface GalleryComponentProps extends PageComponentProps {
   component: "gallery";
-  slides: GallerySlideComponentProps[];
+  options: {
+    variant?: "quilted" | "woven" | "masonry";
+    columns?: number;
+    gap?: number;
+  }
+  images: ImageComponentProps[];
 }
-
-export interface GallerySlideComponentProps extends ImageComponentProps {}

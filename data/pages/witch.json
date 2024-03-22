@@ -1,8 +1,57 @@
 {
   "path": "/witch",
   "title": "Curtis Rochelle - Level Design - Witch",
-  "hero": {},
   "components": [
-
+    {
+      "component": "markdown",
+      "content": "**Role:** Level Designer\n\n**Engine:** Unreal 4\n\n**Studio:** Heartstrings Studios\n\n**Release Status:** Cancelled"
+    },
+    {
+      "component": "markdown",
+      "content": "[Steam Page](https://store.steampowered.com/app/1092870/Witch/)"
+    },
+    {
+      "component": "markdown",
+      "content": "A story-driven, indie RPG, Witch drew praise for its blend of hand-drawn sprites with 3D environments. We unveiled the first public gameplay demo of Witch at DreamHack Dallas 2019, and followed that up with showings in 2019 at QuakeCon and Tokyo Game Show. While I joined the team as a level designer, I eventually became involved in creating the game's environment art, materials, and effects, and prototyping core gameplay elements."
+    },
+    {
+      "component": "gallery",
+      "options":  {
+        "columns": 3,
+        "gap": 10
+      },
+      "images": [
+        {
+          "src": "images/witch/battlements05.jpg",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "src": "images/witch/battlements/Screenshot 2022-08-01 155922.png",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "src": "images/witch/battlements/Witch_Battlements01.png",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "src": "images/witch/battlements/Witch_Battlements02.png",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "src": "images/witch/innerwall/Witch_InnerWall_01.png",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        },
+        {
+          "src": "images/witch/tower/Screenshot 2022-11-04 160440.png",
+          "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+          "credit": "Curtis Rochelle"
+        }
+      ]
+    }
   ]
 }

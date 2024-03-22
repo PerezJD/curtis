@@ -1,19 +1,52 @@
 {
   "path": "/",
   "title": "Curtis Rochelle - Level Design",
-  "hero": {
-    "component": "video",
-    "src": "https://www.youtube.com/watch?v=9LtjWxmC6KY",
-    "title": "Roll for Sandwich"
-  },
   "components": [
     {
       "component": "markdown",
       "content": "Hello, and thanks for taking a look at my portfolio. I'm a game developer with extensive experience working on various small indie game projects. Currently, I am looking for new opportunities to join exciting game projects, while also working on my own projects and polishing my skills."
     },
     {
+      "component": "markdown",
+      "content": "#### Professional Work"
+    },
+    {
+      "component": "markdown",
+      "content": "---"
+    },
+    {
       "component": "projectCard",
-      "width": "third",
+      "width": "half",
+      "image": {
+        "src": "images/witch/battlements05.jpg",
+        "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+        "credit": "Curtis Rochelle"
+      },
+      "projectName": "Witch",
+      "link": "witch.html"
+    },
+    {
+      "component": "projectCard",
+      "width": "half",
+      "image": {
+        "src": "images/kx/Village2.jpg",
+        "caption": "Kingsmen was a turn-based tactical combat game that I worked on as a level designer at Stealth Mode Games. I planned, designed, and built all of the combat maps in the game's demo.",
+        "credit": "Curtis Rochelle"
+      },
+      "projectName": "Kingsman",
+      "link": "kingsman.html"
+    },
+    {
+      "component": "markdown",
+      "content": "\n<br/>\n#### Personal Work"
+    },
+    {
+      "component": "markdown",
+      "content": "---"
+    },
+    {
+      "component": "projectCard",
+      "width": "half",
       "image": {
         "src": "images/3dpixelscene/Dragonhead2D_Final.jpg",
         "caption": "Fanart of Camp Dragonhead from Final Fantasy XIV, created in a 3D pixel art style inspired by Octopath Traveler. Scene created in Unreal Engine 5. All 3D assets modeled in Blender. Textures and character sprites created in Pyxel Edit and Photoshop. Finalist in the 2023 FFXIV Fanfest Art Contest",
@@ -24,25 +57,25 @@
     },
     {
       "component": "projectCard",
-      "width": "third",
+      "width": "half",
       "image": {
-        "src": "images/witch/battlements05.jpg",
-        "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+        "src": "images/derailed/Derailed_Cutting09.png",
+        "caption": "A Half-Life 2 mod I made in 2023 to practice my design and world-building skills. My goal was to make a short, well-paced singleplayer level. In \"Derailed,\" the player must escape a zombie-infested railway tunnel, emerging into the light only to find themselves in a three-way battle between Combine soldiers and a horde of zombies.",
         "credit": "Curtis Rochelle"
       },
-      "projectName": "Witch",
-      "link": "witch.html"
+      "projectName": "Derailed",
+      "link": "derailed.html"
     },
     {
       "component": "projectCard",
-      "width": "third",
+      "width": "half",
       "image": {
-        "src": "images/witch/battlements05.jpg",
-        "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
+        "src": "images/cgma-leveldesign/curtis_rochelle-level_design_for_games-wk1.png",
+        "caption": "levels I created for CG Master Academy's Level Design for Games class",
         "credit": "Curtis Rochelle"
       },
-      "projectName": "Witch",
-      "link": "witch.html"
+      "projectName": "CGMA Level Design",
+      "link": "cgma.html"
     }
   ]
 }
