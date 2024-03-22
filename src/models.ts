@@ -1,14 +1,10 @@
 import {SxProps, Theme} from "@mui/material";
 
-export interface PageData {
-  path: string;
-  title: string;
-  hero?: HeroComponentProps;
-  components: PageComponentProps[];
-}
-
 export interface PageProps {
-  pageData: PageData;
+  path?: string;
+  title?: string;
+  hero?: HeroComponentProps;
+  components?: PageComponentProps[];
 }
 
 export type HeroComponentProps = ImageComponentProps | VideoComponentProps;
@@ -48,7 +44,10 @@ export interface VideoComponentProps extends PageComponentProps {
 
 export interface GalleryComponentProps extends PageComponentProps {
   component: "gallery";
-  slides: GallerySlideComponentProps[];
+  options: {
+    variant?: "quilted" | "woven" | "masonry";
+    columns?: number;
+    gap?: number;
+  }
+  images: ImageComponentProps[];
 }
-
-export interface GallerySlideComponentProps extends ImageComponentProps {}
