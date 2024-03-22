@@ -10,7 +10,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("/:pageName", async (request: Request, response: Response): Promise<void> => {
-  const pageName = request.params['pageName'];
+  const pageName = request.params['pageName'].replace('.html','');
 
   if (pageName === 'favicon.ico') {
     response.status(204);
