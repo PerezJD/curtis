@@ -31,12 +31,12 @@ const PageComponent: FunctionComponent<PageComponentProps> = ({ component, width
       return { xs: 6, sm: 3, md: 3 };
     }
 
-    return { xs: 12, sm: null, md: null };
+    return { xs: 12, sm: undefined, md: undefined };
   }, [width]);
 
   return (
     <>
-      <Grid item columns={columns} sx={{...sx}}>
+      <Grid item xs={columns.xs} sm={columns.sm} md={columns.md} sx={{...sx}}>
         {component === 'markdown' && <TextComponent {...props as TextComponentProps} />}
         {component === 'image' && <ImageComponent {...props as ImageComponentProps} />}
         {component === 'video' && <VideoComponent {...props as VideoComponentProps} />}

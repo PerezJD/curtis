@@ -8,12 +8,12 @@ import { CacheProvider } from '@emotion/react';
 import createEmotionServer from "@emotion/server/create-instance";
 
 import theme from '../theme';
-import {PageData} from "../models";
+import {PageProps} from "../models";
 import App from "../client/components/App";
 
 export default class PageRenderer {
 
-  static async render(pageData: PageData) {
+  static async render(pageData: PageProps) {
     const cache = createCache({ key: 'css' });
     const { extractCriticalToChunks, constructStyleTagsFromChunks } = createEmotionServer(cache);
 
@@ -36,7 +36,7 @@ export default class PageRenderer {
     return PageRenderer.#renderHtmlTemplate(html, emotionCss, pageData);
   }
 
-  static #renderHtmlTemplate(html: string, css: string, pageData: PageData): string {
+  static #renderHtmlTemplate(html: string, css: string, pageData: PageProps): string {
     return `
       <!DOCTYPE html>
       <html lang="en">

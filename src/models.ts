@@ -1,14 +1,10 @@
 import {SxProps, Theme} from "@mui/material";
 
-export interface PageData {
-  path: string;
-  title: string;
-  hero?: HeroComponentProps;
-  components: PageComponentProps[];
-}
-
 export interface PageProps {
-  pageData: PageData;
+  path?: string;
+  title?: string;
+  hero?: HeroComponentProps;
+  components?: PageComponentProps[];
 }
 
 export type HeroComponentProps = ImageComponentProps | VideoComponentProps;

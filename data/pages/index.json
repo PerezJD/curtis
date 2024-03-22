@@ -9,73 +9,40 @@
   "components": [
     {
       "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+      "content": "Hello, and thanks for taking a look at my portfolio. I'm a game developer with extensive experience working on various small indie game projects. Currently, I am looking for new opportunities to join exciting game projects, while also working on my own projects and polishing my skills."
     },
     {
       "component": "projectCard",
-      "width": "half",
+      "width": "third",
       "image": {
-        "src": "/images/witch/battlements05.jpg",
-        "caption": "An awesome picture of something",
+        "src": "images/3dpixelscene/Dragonhead2D_Final.jpg",
+        "caption": "Fanart of Camp Dragonhead from Final Fantasy XIV, created in a 3D pixel art style inspired by Octopath Traveler. Scene created in Unreal Engine 5. All 3D assets modeled in Blender. Textures and character sprites created in Pyxel Edit and Photoshop. Finalist in the 2023 FFXIV Fanfest Art Contest",
+        "credit": "Curtis Rochelle"
+      },
+      "projectName": "Camp Dragonhead",
+      "link": "dragonhead.html"
+    },
+    {
+      "component": "projectCard",
+      "width": "third",
+      "image": {
+        "src": "images/witch/battlements05.jpg",
+        "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
         "credit": "Curtis Rochelle"
       },
       "projectName": "Witch",
-      "link": "/witch.html"
+      "link": "witch.html"
     },
     {
       "component": "projectCard",
-      "width": "half",
+      "width": "third",
       "image": {
-        "src": "/images/kx/Watchtower2.jpg",
-        "caption": "An awesome picture of something",
+        "src": "images/witch/battlements05.jpg",
+        "caption": "These images showcase some of my work on Witch, a cancelled RPG project by Heartstrings Studios. They show a sequence of demo levels that I designed and built in late 2022.",
         "credit": "Curtis Rochelle"
       },
-      "projectName": "Kingsman",
-      "link": "/kingsman.html"
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
-    },
-    {
-      "component": "video",
-      "src": "https://www.youtube.com/watch?v=wqU2xj7hPwM",
-      "title": "Roll for Sandwich"
-    },
-    {
-      "component": "gallery",
-      "slides": [
-        {
-          "image": "/path/to/image.png",
-          "caption": "An awesome picture of something",
-          "credit": "Curtis Rochelle"
-        },
-        {
-          "image": "/path/to/imag2e.png",
-          "caption": "Another awesome picture of something",
-          "credit": "Curtis Rochelle"
-        }
-      ]
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
-    },
-    {
-      "component": "markdown",
-      "content": "Hello, my name is Curtis. This is Athos, my fearless friend. Fabulous game design powers were revealed to me the day I held aloft my magic epee and said: \"By the Power of Guild Hall!\""
+      "projectName": "Witch",
+      "link": "witch.html"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import path from 'path';
 import express, { Request, Response } from 'express';
 import readJsonFile from "./readJsonFile";
-import {PageData} from "../models";
+import {PageProps} from "../models";
 import PageRenderer from "./PageRenderer";
 
 const app = express();
@@ -17,7 +17,7 @@ app.get("/:pageName", async (request: Request, response: Response): Promise<void
     return;
   }
 
-  const pageData = readJsonFile<PageData>(`${__dirname}/../../data/pages/${pageName}.json`);
+  const pageData = readJsonFile<PageProps>(`${__dirname}/../../data/pages/${pageName}.json`);
   const renderedPage = await PageRenderer.render(pageData);
   console.log(renderedPage);
   response.send(renderedPage);
