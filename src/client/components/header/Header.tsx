@@ -9,13 +9,17 @@ const Header: FunctionComponent = () => {
   return (
     <>
       <Box component="header" sx={{ margin: '1rem 0' }}>
-        <Typography
-          variant="h1"
-          align="center"
-          color="textPrimary"
-          style={{ textTransform: "uppercase" }}>
-          Curtis Rochelle
-        </Typography>
+        <a href="/" style={{
+          textDecoration: 'none',
+        }}>
+          <Typography
+            variant="h1"
+            align="center"
+            color="textPrimary"
+            style={{ textTransform: "uppercase" }}>
+            Curtis Rochelle
+          </Typography>
+        </a>
         <Typography
           variant="h5"
           align="center"

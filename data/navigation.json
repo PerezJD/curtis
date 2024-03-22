@@ -1,0 +1,12 @@
+{
+  "links": [
+    {
+      "url": "/professional.html",
+      "text": "Professional Work"
+    },
+    {
+      "url": "personal.html",
+      "text": "Personal Work"
+    }
+  ]
+}
