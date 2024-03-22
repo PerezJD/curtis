@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
     "lib": [
       "dom"
     ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es6",
     "types": [
-      "node",
-      "vite/client"
-    ],
-    "noEmit": true,
-    "isolatedModules": true
-  }
+      "node"
+    ]
+  },
+  "include": ["src/**/*"]
 }
